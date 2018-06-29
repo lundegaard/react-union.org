@@ -1,0 +1,6 @@
+node_modules/*
+build/*
+public/*
+static/*
+stats.json
+docs/node_modules/*

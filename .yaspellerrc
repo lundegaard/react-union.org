@@ -1,0 +1,28 @@
+{
+	"lang": "en",
+	"dictionary": [
+		"TL",
+		"DR",
+		"github",
+		"webpack",
+		"refactor",
+		"Liferay",
+		"Redux",
+		"asynchronously",
+		"Umbraco",
+		"monorepo",
+		"uni",
+		"async",
+		"CLI",
+		"theming",
+		"RegExp",
+		"[A-Z]([A-Z0-9]*[a-z][a-z0-9]*[A-Z]|[a-z0-9]*[A-Z][A-Z0-9]*[a-z])[A-Za-z0-9]*",
+		"[a-z]([A-Z0-9]*[a-z][a-z0-9]*[A-Z]|[a-z0-9]*[A-Z][A-Z0-9]*[a-z])[A-Za-z0-9]*",
+		"hmr",
+		"v[0-9].*",
+		"DEV"
+	],
+	"ignoreText": ["\\[.*\\]"],
+	"ignoreUrls": true,
+	"findRepeatWords": true
+}
