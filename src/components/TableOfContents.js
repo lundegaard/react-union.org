@@ -39,9 +39,9 @@ const ChapterTitle = styled.h5`
 	font-weight: ${({ level }) => {
 		switch (level % 3) {
 			case 1:
-				return '600';
-			case 2:
 				return '400';
+			case 2:
+				return '200';
 			default:
 				return '200';
 		}
@@ -49,11 +49,11 @@ const ChapterTitle = styled.h5`
 	font-size: ${({ level }) => {
 		switch (level % 3) {
 			case 1:
-				return '2.2rem';
+				return '1.414rem';
 			case 2:
-				return '1.8rem';
+				return '1rem';
 			default:
-				return '2.8rem';
+				return '1rem';
 		}
 	}};
 	color: ${({ level, theme }) => {
@@ -66,6 +66,7 @@ const ChapterTitle = styled.h5`
 				return theme.brand;
 		}
 	}};
+	margin-bottom: 16px;
 `;
 
 const TableOfContents = ({ sections: { main, ...other } }) => (

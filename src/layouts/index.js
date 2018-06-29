@@ -8,7 +8,7 @@ import theme from './theme';
 
 const MainLayout = ({ children }) => (
 	<div>
-		<Helmet title="react-union" />
+		<Helmet title="React Union" />
 		<ThemeProvider theme={theme}>{children()}</ThemeProvider>
 	</div>
 );

@@ -1,5 +1,5 @@
 ---
-title: "Union config"
+title: "Configuration"
 order: 3
 ---
 

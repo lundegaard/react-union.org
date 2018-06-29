@@ -1,18 +1,19 @@
+const blue = '#00adef';
+const green = '#8dc53f';
+
 const theme = {
-	// named colors:
-	brand: '#41B883',
-	accent: '#0a5eb7',
+	brand: blue,
+	accent: green,
 	accentDark: '#35495E',
-	lightGrey: '#F6F6F6',
-	darkGrey: '#91a2a3',
+	lightGrey: '#eeeeee',
+	darkGrey: '#5e5e5e',
 	ink: 'black',
 	errorRed: '#FF6666',
 	codeEditBlue: '#2973b7',
 	codeEditGreen: '#42b983',
 
-	// content width:
-	contentWidthLaptop: '850px',
-	sitePadding: '25px',
+	contentWidthLaptop: '950px',
+	sitePadding: '24px',
 };
 
 export default theme;
