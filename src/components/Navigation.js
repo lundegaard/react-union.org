@@ -1,51 +1,55 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import styled from 'styled-components';
+import { Flex } from 'grid-styled';
 import UserLinks from './UserLinks';
 
-const NavContainer = styled.div`
-	display: flex;
-	justify-content: space-between;
-	width: 100%;
+const NavContainer = styled(Flex).attrs({
+	width: [1],
+	is: 'nav',
+	justifyContent: 'space-between',
+})`
 	background: ${props => props.theme.brand};
 
 	.nav-link {
-		font-size: 1.6rem;
-		margin-right: 10px;
+		margin-left: 164px;
 		font-weight: 200;
-		color: black;
+		color: #fff;
+		line-height: 32px;
 	}
+`;
 
-	@media screen and (max-width: 600px) {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+const InlineFlex = styled(Flex).attrs({ is: 'span' })`
+	display: inline-flex;
+`;
 
-		section {
-			margin-bottom: 20px;
-		}
+const Logo = styled(Link)`
+	color: #fff;
+	font-weight: bold;
+	font-size: 1.2rem;
+	line-height: 32px;
+	margin-left: 8px;
 
-		span {
-			display: none;
-		}
+	&:hover {
+		text-decoration: none;
+		border-bottom: none;
 	}
 `;
 
 const Navigation = () => (
 	<NavContainer>
-		<section>
-			<Link className="nav-link" to="/">
-				{' '}
-				HOME{' '}
-			</Link>
+		<Flex is="section" alignItems="center">
+			<InlineFlex slignItems="center" justifyContent="space-between">
+				<img src="/logos/logo-filled.svg" height="32px" alt="" />
+				<Logo to="/">
+					<span>React Union</span>
+				</Logo>
+			</InlineFlex>
 			<Link className="nav-link" to="/docs">
-				{' '}
-				DOCS{' '}
+				Documentation
 			</Link>
-		</section>
-		<span>
-			<UserLinks />
-		</span>
+		</Flex>
+		<UserLinks />
 	</NavContainer>
 );
 

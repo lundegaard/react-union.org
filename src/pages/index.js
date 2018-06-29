@@ -2,8 +2,11 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
 import styled from 'styled-components';
+import { Flex, Box } from 'grid-styled';
 import Navigation from '../components/Navigation';
+import HeroLogo from '../components/HeroLogo';
 import Footer from '../components/Footer';
+import Button from '../components/Button';
 
 const IndexHeadContainer = styled.div`
 	background: ${props => props.theme.brand};
@@ -13,8 +16,9 @@ const IndexHeadContainer = styled.div`
 
 const Hero = styled.div`
 	padding: 50px 0;
+	color: ${props => props.theme.lightGrey};
 	& > h1 {
-		font-weight: 600;
+		font-weight: 400;
 	}
 `;
 
@@ -28,34 +32,60 @@ const BodyContainer = styled.div`
 		margin: 100px auto 0;
 	}
 `;
+const Divider = styled.div`
+	border-bottom: 1px solid ${props => props.theme.lightGrey};
+	width: 100%;
+	margin: 8px 0;
+`;
 
-const ButtonContainer = styled.div`
-	border: 1px solid ${props => props.theme.brand};
-	background: ${props => props.theme.brand};
-	color: white;
-	border-radius: 3px;
-	padding: 25px;
-	font-size: 2rem;
-	display: inline-block;
+const Perex = styled.h4`
+	margin-top: 0;
+	letter-spacing: 12px;
+	font-weight: 200 !important;
+`;
+
+const HeroLogoWrapper = styled.section`
+	width: 450px;
+	margin: 0 auto;
 `;
 
 const Index = () => (
 	<div className="index-container">
-		<Helmet title="react-union" />
+		<Helmet title="React Union" />
 		<main>
 			<IndexHeadContainer>
 				<Navigation />
 				<Hero>
-					<img src="/logos/logo-1024.png" width="150px" alt="" />
-					<h1>react-union</h1>
-					<h4>TODO description</h4>
+					<HeroLogoWrapper>
+						<HeroLogo />
+					</HeroLogoWrapper>
+					<Perex>React for CMSs and Portals</Perex>
+					<Link to="/docs">
+						<Button dark>Get started →</Button>
+					</Link>
 				</Hero>
 			</IndexHeadContainer>
 			<BodyContainer>
-				<p>Marketing stuff</p>
-				<Link to="/docs">
-					<ButtonContainer>Get Started</ButtonContainer>
-				</Link>
+				<Flex>
+					<Box width={[1 / 3]}>
+						<h2>&lt;Union /&gt;</h2>
+						<p>Assemble React application from distributed HTML segments into one Virtual Dom.</p>
+						<p>
+							Use Hot Module Reloading or one Redux store across within environement of your
+							favourite CMS.
+						</p>
+					</Box>
+					<Box width={[1 / 3]}>
+						<h2>Union Scripts</h2>
+						<p>Use Zero config SDK targetting Large Apps.</p>
+					</Box>
+					<Box width={[1 / 3]}>
+						<h2>Boilerplates</h2>
+						<p>Setup quickly your project with our boilerplates.</p>
+					</Box>
+				</Flex>
+				<Divider />
+				<Box>What next?</Box>
 			</BodyContainer>
 			<Footer />
 		</main>
