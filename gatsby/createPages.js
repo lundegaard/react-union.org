@@ -35,4 +35,9 @@ module.exports = async({ graphql, boundActionCreators }) => {
 			},
 		});
 	});
+
+	createPage({
+		path: '/history',
+		component: path.resolve('src/pages/History.js'),
+	});
 };
