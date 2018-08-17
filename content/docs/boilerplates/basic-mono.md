@@ -1,5 +1,5 @@
 ---
-title: "Basic boilerplate monorepo"
+title: "Monorepo"
 order: 3
 ---
 

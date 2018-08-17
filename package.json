@@ -5,9 +5,7 @@
 	"author": "Lukas Sulik <lukas.sulik@lundegaard.eu>",
 	"contributors": [
 		"Tomas Konrady <tomas.konrady@lundegaard.eu>",
-		"Vaclav Jancarik <vaclav.jancarik@lundegaard.eu>",
-		"Lukas Sulik <lukas.sulik@lundegaard.eu>",
-		"Jakub Kohout <jakub.kohout@lundegaard.eu>"
+		"Lukas Sulik <lukas.sulik@lundegaard.eu>"
 	],
 	"repository": "https://github.com/lundegaard/react-union",
 	"license": "UNLICENSED",

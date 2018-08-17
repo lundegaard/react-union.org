@@ -1,7 +1,6 @@
 ---
-title: "React-union-scripts"
-section: "main"
-order: 2
+title: "Introduction"
+order: 1
 ---
 
 Extendable and configurable set of scripts for building and running your React applications that is designed for not a typical Node environments such as Content Management Systems (CMS) or Java Portals.
