@@ -1,6 +1,6 @@
 ---
 title: "Liferay"
-order: 2
+order: 3
 ---
 
 This project shows how both `react-union` and `react-union-scripts` can be used within [Liferay](https://dev.liferay.com/) portal platform.

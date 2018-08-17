@@ -1,6 +1,6 @@
 ---
 title: "Monorepo"
-order: 3
+order: 2
 ---
 
 This project can either be used as the example of react-union and react-union-scripts working together or as the base of your project.

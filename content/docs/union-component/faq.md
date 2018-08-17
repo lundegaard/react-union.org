@@ -1,6 +1,6 @@
 ---
 title: "FAQ"
-order: 4
+order: 8
 ---
 
 ## _Why should I use it?_
