@@ -14,7 +14,6 @@ module.exports = ({ node, boundActionCreators, getNode }) => {
 			newSlug = `/${R_.toKebabCase(slug)}`;
 		}
 
-		// console.error(parsedFilePath, fileNode.relativePath, R.split('/', parsedFilePath.dir)[1]);
 		const section = R.split('/', parsedFilePath.dir)[1];
 		if (title && section) {
 			newSlug = `/${R_.toKebabCase(section)}-${R_.toKebabCase(title)}`;
