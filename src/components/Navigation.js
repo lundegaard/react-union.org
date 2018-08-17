@@ -39,7 +39,7 @@ const Logo = styled(Link)`
 const Navigation = () => (
 	<NavContainer>
 		<Flex is="section" alignItems="center">
-			<InlineFlex slignItems="center" justifyContent="space-between">
+			<InlineFlex alignItems="center" justifyContent="space-between">
 				<img src="/logos/logo-filled.svg" height="32px" alt="" />
 				<Logo to="/">
 					<span>React Union</span>
