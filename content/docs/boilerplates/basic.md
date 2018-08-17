@@ -1,5 +1,5 @@
 ---
-title: "Basic boilerplate"
+title: "Basic"
 order: 1
 ---
 

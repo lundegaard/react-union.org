@@ -32,6 +32,10 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, dl {
     font-weight: 200;
 }
 
+ul {
+    margin-left: 1rem;
+}
+
 li, li>*, dt, dd {
     margin: .5rem 0;
 }

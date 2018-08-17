@@ -112,6 +112,15 @@ const BodyGrid = styled.div`
 	}
 `;
 
+const HeaderContainer = styled.div`
+	grid-column: 1 / 3;
+	grid-row: 1 / 2;
+	z-index: 2;
+	@media screen and (max-width: 600px) {
+		order: 1;
+	}
+`;
+
 const BodyContainer = styled.div`
 	grid-column: 2 / 3;
 	grid-row: 2 / 3;
@@ -130,15 +139,6 @@ const BodyContainer = styled.div`
 
 	& > h1 {
 		color: ${props => props.theme.accentDark};
-	}
-`;
-
-const HeaderContainer = styled.div`
-	grid-column: 1 / 3;
-	grid-row: 1 / 2;
-	z-index: 2;
-	@media screen and (max-width: 600px) {
-		order: 1;
 	}
 `;
 
