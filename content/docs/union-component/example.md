@@ -1,6 +1,6 @@
 ---
 title: "Example"
-order: 1
+order: 2
 ---
 
 **Output of a server:**

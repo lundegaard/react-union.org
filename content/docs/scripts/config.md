@@ -1,6 +1,6 @@
 ---
 title: "Configuration"
-order: 3
+order: 4
 ---
 
 Place the file into the root of your project if you want to configure react-union-scripts.

@@ -2,11 +2,26 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 import styled from 'styled-components';
-import { toLower } from 'ramda';
+import { __, map, prop, compose } from 'ramda';
+import { toKebabCase } from 'ramda-extension';
 
 const TOCWrapper = styled.div`
 	padding: ${props => props.theme.sitePadding};
+	padding-left: 0;
 	margin: 0;
+
+	a {
+		margin: 0;
+		padding: 0.25rem 0;
+		color: #000;
+		display: block;
+	}
+
+	a:hover {
+		text-decoration: none;
+		border-bottom: none;
+		color: ${props => props.theme.brand};
+	}
 `;
 
 const StyledSectionList = styled.ol`
@@ -16,22 +31,35 @@ const StyledSectionList = styled.ol`
 
 const EntryTitle = styled.h6`
 	display: inline-block;
-	font-weight: 200;
-	color: black;
 	margin: 0;
 	line-height: 1.5;
-	border-bottom: 1px solid transparent;
 	text-decoration: none;
 `;
 
 const SectionListItem = styled.li`
 	margin: 0;
+	padding-left: ${props => props.theme.sitePadding};
 `;
 
 const EntryListItem = styled.li`
 	margin: 0;
-	a:hover {
-		border-bottom: 1px solid black;
+
+	a {
+		padding-left: ${props => props.theme.sitePadding};
+	}
+
+	a.active {
+		border-left: 8px solid ${props => props.theme.brand};
+		color: ${props => props.theme.brand};
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			font-weight: bold;
+		}
 	}
 `;
 
@@ -66,29 +94,34 @@ const ChapterTitle = styled.h5`
 				return theme.brand;
 		}
 	}};
-	margin-bottom: 16px;
+	margin: 16px 0 8px 0;
 `;
 
-const TableOfContents = ({ sections: { main, ...other } }) => (
-	<TOCWrapper>
-		{main.map(({ slug, title }) => (
+const renderSections = (main, subsections) =>
+	map(
+		({ slug, title }) => (
 			<StyledSectionList key={slug}>
 				<SectionListItem>
-					<Link to={slug}>
-						<ChapterTitle level={1}>{title}</ChapterTitle>
-					</Link>
+					<ChapterTitle level={1}>{title}</ChapterTitle>
 				</SectionListItem>
-				{other[toLower(title)] &&
-					other[toLower(title)].map(({ title, slug }) => (
+				{compose(
+					map(({ title, slug }) => (
 						<EntryListItem key={slug}>
-							<Link to={slug}>
+							<Link to={slug} activeClassName="active">
 								<EntryTitle>{title}</EntryTitle>
 							</Link>
 						</EntryListItem>
-					))}
+					)),
+					prop(__, subsections),
+					toKebabCase
+				)(title)}
 			</StyledSectionList>
-		))}
-	</TOCWrapper>
+		),
+		main
+	);
+
+const TableOfContents = ({ sections: { main, ...subsections } }) => (
+	<TOCWrapper>{renderSections(main, subsections)}</TOCWrapper>
 );
 
 TableOfContents.propTypes = {

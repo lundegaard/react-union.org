@@ -1,6 +1,5 @@
 ---
-title: "React-union"
-section: "main"
+title: "Introduction"
 order: 1
 ---
 

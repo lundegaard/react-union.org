@@ -19,10 +19,6 @@ const NavContainer = styled(Flex).attrs({
 	}
 `;
 
-const InlineFlex = styled(Flex).attrs({ is: 'span' })`
-	display: inline-flex;
-`;
-
 const Logo = styled(Link)`
 	color: #fff;
 	font-weight: bold;
@@ -36,16 +32,30 @@ const Logo = styled(Link)`
 	}
 `;
 
+const LogoImage = styled.img.attrs({
+	src: '/logos/logo-filled.svg',
+	height: 32,
+	width: 32,
+	alt: 'Logo',
+})`
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 4px;
+`;
+
+const LogoText = styled.span`
+	vertical-align: middle;
+`;
+
 const Navigation = () => (
 	<NavContainer>
 		<Flex is="section" alignItems="center">
-			<InlineFlex alignItems="center" justifyContent="space-between">
-				<img src="/logos/logo-filled.svg" height="32px" alt="" />
-				<Logo to="/">
-					<span>React Union</span>
-				</Logo>
-			</InlineFlex>
-			<Link className="nav-link" to="/docs">
+			<Logo to="/">
+				<LogoImage />
+				<LogoText>React Union</LogoText>
+			</Logo>
+
+			<Link className="nav-link" to="/union-component-introduction">
 				Documentation
 			</Link>
 		</Flex>

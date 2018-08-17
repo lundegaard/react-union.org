@@ -1,6 +1,6 @@
 ---
 title: "API"
-order: 2
+order: 3
 ---
 
 - [Usage](#usage)

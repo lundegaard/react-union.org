@@ -1,6 +1,6 @@
 ---
 title: "Recipes"
-order: 5
+order: 6
 ---
 
 ### Extending `webpack.config`

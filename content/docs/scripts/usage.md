@@ -1,6 +1,6 @@
 ---
 title: "Usage"
-order: 1
+order: 2
 ---
 
 **TL;DR** You can use one of our [examples](https://github.com/lundegaard/react-union/tree/master/boilerplates/react-union-boilerplate-basic) as a boilerplate for your project instead.

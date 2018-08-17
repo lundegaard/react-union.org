@@ -1,5 +1,5 @@
 ---
-title: "Basic boilerplate with Liferay"
+title: "Liferay"
 order: 2
 ---
 

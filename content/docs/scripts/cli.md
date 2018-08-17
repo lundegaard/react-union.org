@@ -1,6 +1,6 @@
 ---
 title: "CLI"
-order: 2
+order: 3
 ---
 
 ### analyze

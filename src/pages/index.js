@@ -34,11 +34,12 @@ const BodyContainer = styled.div`
 		margin: 100px auto 0;
 	}
 `;
-const Divider = styled.div`
-	border-bottom: 1px solid ${props => props.theme.lightGrey};
-	width: 100%;
-	margin: 8px 0;
-`;
+
+// const Divider = styled.div`
+// 	border-bottom: 1px solid ${props => props.theme.lightGrey};
+// 	width: 100%;
+// 	margin: 8px 0;
+// `;
 
 const Perex = styled.h4`
 	margin-top: 0;
@@ -62,35 +63,42 @@ const Index = ({ data }) => (
 						<HeroLogo />
 					</HeroLogoWrapper>
 					<Perex>React for CMSs and Portals</Perex>
-					<Link to="/docs">
+					<Link to="/union-component-introduction">
 						<Button dark>Get started →</Button>
 					</Link>
 				</Hero>
 			</IndexHeadContainer>
 			<BodyContainer>
 				<Flex>
-					<Box width={[1 / 3]}>
-						<h2>&lt;Union /&gt;</h2>
+					<Box width={[1 / 3]} px="16px">
+						<h2>
+							<Link to="/union-component-introduction">&lt;Union /&gt;</Link>
+						</h2>
 						<p>Assemble React application from distributed HTML segments into one Virtual Dom.</p>
 						<p>
-							Use Hot Module Reloading or one Redux store across within environement of your
-							favourite CMS.
+							Use Hot Module Reloading or one Redux store within environment of your favourite CMS.
 						</p>
 					</Box>
-					<Box width={[1 / 3]}>
-						<h2>Union Scripts</h2>
-						<p>Use Zero config SDK targetting Large Apps.</p>
+					<Box width={[1 / 3]} px="16px">
+						<h2>
+							<Link to="/scripts-introduction">Union Scripts</Link>
+						</h2>
+						<p>Use Zero config JavaScript SDK targetting Large Apps.</p>
+						<p>It configures code-splitting with asynchronous loading support in default.</p>
 					</Box>
-					<Box width={[1 / 3]}>
-						<h2>Boilerplates</h2>
+					<Box width={[1 / 3]} px="16px">
+						<h2>
+							<Link to="/components-introduction">Boilerplates</Link>
+						</h2>
 						<p>Setup quickly your project with our boilerplates.</p>
+						<p>Use e.g. monorepo boilerplate that is suitable for large projects.</p>
 					</Box>
 				</Flex>
+				<Box>What next?</Box>
 				<LandingExample examples={data.examples} exampleId="example1" />
 				<LandingExample examples={data.examples} exampleId="example2" />
 				<LandingExample examples={data.examples} exampleId="example3" />
 				<Divider />
-				<Box>What next?</Box>
 			</BodyContainer>
 			<Footer />
 		</main>
