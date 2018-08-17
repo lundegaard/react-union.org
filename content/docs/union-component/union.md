@@ -19,7 +19,7 @@ var Union = require('react-union').Union;
 
 ## Properties
 
-#### `children` : _Reactnode_
+#### `children` : _ReactNode_
 
 Children of the `Union` component.
 
@@ -35,7 +35,7 @@ Called before the scan of the HTML.
 #### `parent` : _DOMelement_
 Element in which the scan is running. The default value is `document.body`.
 
-#### `routes` : _arrayof Route_
+#### `routes` : _Route[]_
 Array of routes that are supported by your application. See section [_Route_](#route).
 
 #### `strictMode` : _boolean_
@@ -164,7 +164,7 @@ The scan process finds the widget descriptors in the DOM and, based on them, `<U
 
 The scan is launched if either `Union` is mounted or reference to the `routes` property changes.
 
-### 5. Optimalization
+### 5. Optimization
 
 In the case above, a new array of routes is created with every render and it impacts the performance.
 If there is no need for generating routes dynamically, we can refactor above example like this:

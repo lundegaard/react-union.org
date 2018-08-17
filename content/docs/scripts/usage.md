@@ -1,11 +1,11 @@
 ---
 title: "Usage"
-order: 2
+order: 3
 ---
 
-**TL;DR** You can use one of our [examples](https://github.com/lundegaard/react-union/tree/master/boilerplates/react-union-boilerplate-basic) as a boilerplate for your project instead.
+**TL;DR** You can use one of our [boilerplates](https://github.com/lundegaard/react-union/tree/master/boilerplates) as a base for your project instead.
 
-1.  Simulate output of your server in development
+## 1. Simulate output of your server in development
 
 Create `<project root>/public/YourAppName/index.ejs`:
 
@@ -25,7 +25,9 @@ Create `<project root>/public/YourAppName/index.ejs`:
 
 For details how to write a template, see [https://github.com/jantimon/html-webpack-plugin](html-webpack-plugin).
 
-2.  To your `package.json` add scripts:
+## 2. Add scripts
+
+Put script from RUS to your `package.json`:
 
 ```json
 {
@@ -36,7 +38,9 @@ For details how to write a template, see [https://github.com/jantimon/html-webpa
 }
 ```
 
-3.  Create `<project root>/src/apps/YourAppName/index.js`:
+## 3. Create entry to your application
+
+Code of your `<project root>/src/apps/YourAppName/index.js` may look like following:
 
 ```jsx
 import React from 'react';
@@ -45,7 +49,7 @@ import { render } from 'react-dom';
 render('Hello World', document.getElementById('root'));
 ```
 
-4.  Run your project
+## 4. Run your project
 
 **Development server**
 
@@ -94,14 +98,3 @@ Runs [`webpack-bundle-analyzer`](https://github.com/th0r/webpack-bundle-analyzer
 ```
 yarn start --app YourAppName --analyze
 ```
-
-## Monorepo Usage
-
-**TL;DR** You can use our mono repository example [examples](https://github.com/lundegaard/react-union/tree/master/boilerplates/react-union-boilerplate-monorepo) as a boilerplate for your project instead.
-
-Usage is mostly same as in uni repository, but it has a few differences.
-
-- There are two types of packages - `widgets` and `apps`.
-- The are distinguished by pattern `.*union-app.*` and `.*union-widget.*` Pattern can be changed in `union.config.js`.
-- App name must reflect folder name and must be in dash-case. `YourAppName > union-app-your-app-name`
-- You can use as many Workspaces as you want. e.g. ['packages/*'] or ['apps/*', 'widgets/*'].

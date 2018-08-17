@@ -20,9 +20,14 @@
 		"[a-z]([A-Z0-9]*[a-z][a-z0-9]*[A-Z]|[a-z0-9]*[A-Z][A-Z0-9]*[a-z])[A-Za-z0-9]*",
 		"hmr",
 		"v[0-9].*",
-		"DEV"
+		"DEV",
+		"withwidgetcontext",
+		"npm",
+		"api",
+		"ReactNode",
+		"codebase",
+		"classlanguage"
 	],
-	"ignoreText": ["\\[.*\\]"],
 	"ignoreUrls": true,
 	"findRepeatWords": true
 }

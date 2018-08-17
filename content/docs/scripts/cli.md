@@ -1,88 +1,100 @@
 ---
 title: "CLI"
-order: 3
+order: 5
 ---
 
-### analyze
+## Table of Contents
 
-- available for: `start`
+* [--analyze](#--analyze)
+* [--app](#--app)
+* [--no-hmr](#--no-hmr)
+* [--proxy](#--proxy)
+* [--release](#--release)
+* [--target](#--target)
+* [--verbose](#--verbose)
+
+
+### __--analyze__
 
 Runs [`webpack-bundle-analyzer`](https://github.com/th0r/webpack-bundle-analyzer).
 
-Example:
+Option is available for `start` script.
 
-```
+
+#### Example
+
+```sh
 react-union-scripts start --app MyApp --analyze
 ```
 
-### app
-
-- available for: `start`, `build`
+### __--app__
 
 Determines what application to build or start.
 
-Example:
+Option is available for `start` and `build` scripts.
 
-```
+#### Example
+
+```sh
 react-union-scripts start --app MyApp
 ```
 
-### no-hmr
-
-- available for: `start`, `build`
+### __--no-hmr__
 
 If is set, hot module replacement is off.
 
-Example:
+Option is available for `start` and `build` scripts.
 
-```
+#### Example
+
+```sh
 react-union-scripts start --no-hmr
 ```
 
-### proxy
-
-- available for: `start`.
+### __--proxy__
 
 If is set, we start proxy server instead of development server.
 
-Example:
+Option is available for `start` script.
 
-```
+#### Example
+
+```sh
 react-union-scripts start --proxy
 ```
 
-### release
-
-- available for: `start`, `build`
+### __--release__
 
 If is set, the build is optimized for production.
 
-Example:
+Option is available for `start` and `build` scripts.
 
-```
+#### Example
+
+```sh
 react-union-scripts build --release
 ```
 
-### target
+### __--target__
 
-- available for: `start`, `build`
+Custom value that can be used in `union.config.js
+`.
+Option is available for `start` and `build` scripts.
 
-Custom value that can be used in `union.config.js`.
+#### Example
 
-Example:
-
-```
+```sh
 react-union-scripts build --target wordpress
 ```
 
-### verbose
-
-- available for: `start`, `build`
+### __--verbose__
 
 If is set, the console output is more verbose.
 
-Example:
+Option is available for `start` and `build` scripts.
 
-```
+#### Example
+
+```sh
 react-union-scripts build --verbose
 ```

@@ -8,7 +8,7 @@ import Navigation from '../components/Navigation';
 import HeroLogo from '../components/HeroLogo';
 import Footer from '../components/Footer';
 import Button from '../components/Button';
-import LandingExample from '../components/LandingExample';
+// import LandingExample from '../components/LandingExample';
 
 const IndexHeadContainer = styled.div`
 	background: ${props => props.theme.brand};
@@ -52,7 +52,13 @@ const HeroLogoWrapper = styled.section`
 	margin: 0 auto;
 `;
 
-const Index = ({ data }) => (
+// TODO: add examples
+//				<Box>What next?</Box>
+//				<LandingExample examples={data.examples} exampleId="example1" />
+//				<LandingExample examples={data.examples} exampleId="example2" />
+//				<LandingExample examples={data.examples} exampleId="example3" />
+
+const Index = () => (
 	<div className="index-container">
 		<Helmet title="React Union" />
 		<main>
@@ -94,10 +100,6 @@ const Index = ({ data }) => (
 						<p>Use e.g. monorepo boilerplate that is suitable for large projects.</p>
 					</Box>
 				</Flex>
-				<Box>What next?</Box>
-				<LandingExample examples={data.examples} exampleId="example1" />
-				<LandingExample examples={data.examples} exampleId="example2" />
-				<LandingExample examples={data.examples} exampleId="example3" />
 				<Divider />
 
 				<Box>
