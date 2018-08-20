@@ -5,10 +5,11 @@ import { ThemeProvider } from 'styled-components';
 import './css/index.css';
 import './css/prism-darcula.css';
 import theme from './theme';
+import config from '../../siteConfig';
 
 const MainLayout = ({ children }) => (
 	<div>
-		<Helmet title="React Union" />
+		<Helmet title={config.title} />
 		<ThemeProvider theme={theme}>{children()}</ThemeProvider>
 	</div>
 );

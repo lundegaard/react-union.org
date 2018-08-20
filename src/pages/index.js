@@ -8,6 +8,8 @@ import Navigation from '../components/Navigation';
 import HeroLogo from '../components/HeroLogo';
 import Footer from '../components/Footer';
 import Button from '../components/Button';
+import Seo from '../components/Seo';
+import config from '../../siteConfig';
 // import LandingExample from '../components/LandingExample';
 
 const IndexHeadContainer = styled.div`
@@ -60,7 +62,8 @@ const HeroLogoWrapper = styled.section`
 
 const Index = () => (
 	<div className="index-container">
-		<Helmet title="React Union" />
+		<Helmet title={config.title} />
+		<Seo ogUrl="index.html" />
 		<main>
 			<IndexHeadContainer>
 				<Navigation />
