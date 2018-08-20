@@ -1,7 +1,10 @@
+const { title, siteUrl } = require('./siteConfig');
+
 module.exports = {
 	// pathPrefix: config.pathPrefix,
 	siteMetadata: {
-		siteUrl: 'http://react-union.org',
+		title,
+		siteUrl,
 	},
 	plugins: [
 		'gatsby-plugin-react-helmet',

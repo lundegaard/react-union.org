@@ -26,6 +26,8 @@ import {
 
 import Header from '../components/Header';
 import TableOfContents from '../components/TableOfContents';
+import Seo from '../components/Seo';
+import config from '../../siteConfig';
 
 const sectionLens = lensProp('section');
 
@@ -50,9 +52,8 @@ const normalizeSections = sections => {
 
 const Docs = ({ data: { postBySlug, tableOfContents } }) => (
 	<div>
-		<Helmet>
-			<title>{`${postBySlug.frontmatter.title} | react-union`}</title>
-		</Helmet>
+		<Helmet title={`${postBySlug.frontmatter.title} | ${config.title}`} />
+		<Seo ogUrl="union-component-introduction.html" />
 		<BodyGrid>
 			<HeaderContainer>
 				<Header />
