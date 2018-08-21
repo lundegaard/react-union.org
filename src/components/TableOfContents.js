@@ -12,7 +12,6 @@ const TOCWrapper = styled.div`
 
 	a {
 		margin: 0;
-		padding: 0.25rem 0;
 		color: #000;
 		display: block;
 	}
@@ -45,6 +44,7 @@ const EntryListItem = styled.li`
 	margin: 0;
 
 	a {
+		padding: 0.25rem 0;
 		padding-left: ${props => props.theme.sitePadding};
 	}
 
@@ -107,7 +107,7 @@ const renderSections = (main, subsections) =>
 				{compose(
 					map(({ title, slug }) => (
 						<EntryListItem key={slug}>
-							<Link to={slug} activeClassName="active">
+							<Link to={slug} className="link" activeClassName="active">
 								<EntryTitle>{title}</EntryTitle>
 							</Link>
 						</EntryListItem>
