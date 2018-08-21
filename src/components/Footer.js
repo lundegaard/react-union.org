@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import { Box, Flex } from 'grid-styled';
-import versions from '../../content/versions.json';
+import versions from '../../content/versions';
 
 const SiteContainer = Flex.extend`
 	text-align: center;
