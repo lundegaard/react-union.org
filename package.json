@@ -13,6 +13,7 @@
 		"gatsby": "^1.9.273",
 		"gatsby-link": "^1.6.7",
 		"gatsby-plugin-catch-links": "^1.0.4",
+		"gatsby-plugin-google-analytics": "^1.0.31",
 		"gatsby-plugin-google-fonts": "0.0.4",
 		"gatsby-plugin-no-sourcemaps": "^1.0.5",
 		"gatsby-plugin-nprogress": "^1.0.2",
@@ -50,9 +51,9 @@
 		"gh-pages": "^1.0.0",
 		"husky": "^0.14.3",
 		"lint-staged": "^7.2.0",
-		"yaspeller": "^4.1.0",
 		"prettier": "^1.13.5",
-		"write-good": "^0.13.0"
+		"write-good": "^0.13.0",
+		"yaspeller": "^4.1.0"
 	},
 	"scripts": {
 		"start": "gatsby develop",
