@@ -51,7 +51,7 @@ module.exports = {
 		'gatsby-plugin-sitemap',
 		'gatsby-plugin-offline',
 		{
-			resolve: 'gatsby-plugin-google-analytics',
+			resolve: 'gatsby-plugin-gtag',
 			options: {
 				trackingId: 'A-22469286-2',
 			},
