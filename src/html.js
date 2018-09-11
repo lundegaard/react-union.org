@@ -22,6 +22,10 @@ const HTML = ({ body, headComponents, postBodyComponents }) => {
 			<head>
 				<meta charSet="utf-8" />
 				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+				<meta
+					name="google-site-verification"
+					content="T9MEmlqShYeiWc0Ki18pTcdEWidi11Yfti2Z4ClrgM0"
+				/>
 				{headComponents}
 				<link rel="shortcut icon" href={favicon} />
 				{css}
