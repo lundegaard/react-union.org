@@ -18,6 +18,7 @@ order: 6
 * [asyncSuffix](#asyncsuffix)
 * [copyToPublicIgnore](#copytopublicignore)
 * [workspaces](#workspaces)
+* [uglifyOptions](#uglifyoptions)
 
 Place the file `union.config.js` into the root of your project if you want to configure react-union-scripts.
 
@@ -187,3 +188,13 @@ Pattern for the widget packages. Defaults to `union-widget`.
 `workspaces.appPattern` : _string, array[string], RegExp_
 
 Latter for the app packages. Defaults to `union-app`.
+
+## __uglifyOptions__
+
+Options for configuration of minifier engine (currently [uglify-es](https://www.npmjs.com/package/uglify-es)).
+
+Supported options:
+
+- [`cache`](https://webpack.js.org/plugins/uglifyjs-webpack-plugin/#cache)
+- [`parallel`](https://webpack.js.org/plugins/uglifyjs-webpack-plugin/#parallel)
+- [`sourceMap`](https://webpack.js.org/plugins/uglifyjs-webpack-plugin/#sourcemap)
