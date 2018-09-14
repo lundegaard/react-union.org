@@ -8,6 +8,7 @@ order: 8
 * [Templates for mocking the server output ](#code-class-language-textejscode-templates-for-mocking-the-server-output)
 * [Asynchronous loading of modules](#asynchronous-loading-of-modules)
 * [Testing with Enzyme](#testing-with-enzyme)
+* [Adding Sass support](#adding-sass-support)
 
 ## Extending `webpack.config`
 
@@ -117,4 +118,56 @@ import { configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 
 configure({ adapter: new Adapter() });
+```
+
+## Adding Sass support
+
+Add `webpack-merge`, `sass-loader` and `node-sass` to your dependencies:
+
+```sh
+yarn add -D webpack-merge sass-loader node-sass
+```
+
+Then add `union.config.js` inside your root folder with following content:
+
+```js
+const merge = require('webpack-merge');
+const path = require('path');
+
+module.exports = ({ debug }) => ({
+	mergeWebpackConfig: unionWebpackConfig =>
+		merge(unionWebpackConfig, {
+			module: {
+				rules: [
+					{
+						test: /\.scss$/,
+						include: path.resolve(__dirname, './src'),
+						use: [
+							'style-loader',
+							{
+								loader: 'css-loader',
+								options: {
+									importLoaders: 1,
+									minimize: true,
+									sourceMap: debug,
+								},
+							},
+							{
+								loader: 'resolve-url-loader',
+								options: {
+									sourceMap: true,
+								},
+							},
+							{
+								loader: 'sass-loader',
+								options: {
+									sourceMap: debug,
+								},
+							},
+						],
+					},
+				],
+			},
+		}),
+});
 ```
