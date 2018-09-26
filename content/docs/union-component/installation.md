@@ -1,5 +1,5 @@
 ---
-title: "Installation"
+title: 'Installation'
 order: 1
 ---
 
@@ -16,7 +16,7 @@ yarn add react-union
 or
 
 ```sh
-npm install react-union
+npm install react-union --save
 ```
 
 Please note that we use [React](http://npm.im/react) and [ReactDOM](http://npm.im/react-dom) as peer dependencies.

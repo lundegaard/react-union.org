@@ -1,21 +1,21 @@
 ---
-title: "Common Data Descriptors"
+title: 'Common Data Descriptors'
 order: 5
 ---
 
-_Common data descriptor_ is a DOM element used for passing common data to all your widgets described by [_widget descriptors_](/union-component-widget-descriptors).
+A _common data descriptor_ is a DOM element used for passing common data to all of your widgets.
 
-The common descriptor must be a `<script>` element with the attribute `data-union-common`.
+It must be a `<script>` element with the `data-union-common` HTML attribute.
 
-Please note that even though you can provide multiple common data descriptors to React-union, but it is discouraged if you don't have control over their order in the portal or CMS.
+Please note that although you can provide multiple common data descriptors to React-union, it is discouraged if you don't have control over their order in the portal or CMS.
 
 ## Attributes
 
-#### `data-union-common` : _string*_
-Use to mark `script` tag as a common descriptor.
+#### `data-union-common` : _string\*_
 
-Body of the `<script />` should be your data in JSON format.
+Used to mark a `script` element as a common descriptor.
 
+The body of the `<script />` must be a valid JSON.
 
 ## Example
 
@@ -31,3 +31,5 @@ Body of the `<script />` should be your data in JSON format.
 	}
 </script>
 ```
+
+**Note:** If you are generating the JSON body using a templating engine, ensure that all quotes are properly matched and that there are no trailing commas. This is a very common source of bugs!

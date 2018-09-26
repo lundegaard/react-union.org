@@ -83,24 +83,25 @@ const Index = () => (
 						<h2>
 							<Link to="/union-component-introduction">&lt;Union /&gt;</Link>
 						</h2>
-						<p>Assemble React application from distributed HTML segments into one Virtual Dom.</p>
+						<p>Render React applications based on server-rendered HTML fragments.</p>
 						<p>
-							Use Hot Module Reloading or one Redux store within environment of your favourite CMS.
+							Use Hot Module Reloading or a single Redux store within the environment of your
+							favourite CMS.
 						</p>
 					</Box>
 					<Box width={[1 / 3]} px="16px">
 						<h2>
 							<Link to="/scripts-introduction">Union Scripts</Link>
 						</h2>
-						<p>Use zero-config JavaScript SDK targetting Large Apps.</p>
-						<p>It configures code-splitting with asynchronous loading support in default.</p>
+						<p>Use a zero-config JavaScript SDK suitable for large codebases.</p>
+						<p>Preconfigured bundle size optimization with automatic code-splitting.</p>
 					</Box>
 					<Box width={[1 / 3]} px="16px">
 						<h2>
 							<Link to="/components-introduction">Boilerplates</Link>
 						</h2>
-						<p>Setup quickly your project with our boilerplates.</p>
-						<p>Use e.g. monorepo boilerplate that is suitable for large projects.</p>
+						<p>Blazing fast project setup with our boilerplates.</p>
+						<p>Multiple examples with more on the way!</p>
 					</Box>
 				</Flex>
 				<Divider />
@@ -108,7 +109,7 @@ const Index = () => (
 				<Box>
 					<p>
 						<strong>
-							The project React-union is a collection of tools that allows you to build modern React
+							The React-union project is a collection of tools that allows you to build modern React
 							applications which run on specific server-side environments such as Content Management
 							Systems or Portals.
 						</strong>
@@ -159,7 +160,7 @@ const Index = () => (
 
 				<p>
 					There are cases where our widgets need to be provided data from a server, e.g. information
-					about user, preferences, color schema, etc.
+					about the user, preferences, color schema, etc.
 				</p>
 			</BodyContainer>
 			<Footer />

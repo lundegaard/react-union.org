@@ -1,5 +1,5 @@
 ---
-title: "Union Component"
-section: "main"
+title: 'Union Component'
+section: 'main'
 order: 1
 ---

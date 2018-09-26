@@ -1,5 +1,5 @@
 ---
-title: "FAQ"
+title: 'FAQ'
 order: 8
 ---
 
@@ -9,35 +9,38 @@ React-union makes features such as Hot Module Reloading possible for systems suc
 
 ```jsx
 // index.js
+
+import '@babel/polyfill';
 import React from 'react';
 import { justRender } from 'react-union';
-import { AppContainer } from 'react-hot-loader';
 
 import Root from './components/Root';
 
-const render = Component =>
-	justRender(
-		<AppContainer errorReporter={__DEV__ ? require('redbox-react').default : null}>
-			<Component />
-		</AppContainer>
-	);
-
-render(Root);
-
-if (module.hot) {
-	module.hot.accept(['./components/Root'], () => {
-		const NextRoot = require('./components/Root').default;
-		render(NextRoot);
-	});
-}
+justRender(<Root />);
 ```
 
-## _Why single virtual DOM?_
+```jsx
+// Root.js
 
-**TL;DR**: Redux :)
+import React from 'react';
+import { Union } from 'react-union';
+import { hot } from 'react-hot-loader';
 
-Your widgets might be spread out all over the document. Your application, on the contrary, should use just one place for the application state (single source of truth).
-For example, in Redux, you should have one store to allow [time traveling](https://github.com/gaearon/redux-devtools#redux-devtools). Implementation in Union is pretty straightforward.
+import routes from '../../routes';
+
+import './Root.css';
+
+const Root = () => <Union routes={routes} />;
+
+export default hot(module)(Root);
+```
+
+## _Why use a single virtual DOM?_
+
+**TL;DR**: Redux!
+
+Your widgets might be spread out all over the document. Your application, on the contrary, should use a single source of truth for the application state – a single Redux store.
+For example, in Redux, you should only ever use a single store to allow [time traveling](https://github.com/gaearon/redux-devtools#redux-devtools) and other cool features. Implementation in Union is pretty straightforward.
 
 Your entry file can look like this:
 
@@ -51,9 +54,9 @@ import Root from './Root';
 
 const store = configureStore();
 
-// "justRender" creates HTML element for you app.
+// `justRender` creates an HTML element for your app.
 // Useful if you don't have root element prepared
-// Never use just "document.body"!
+// Do NOT use `document.body`!
 justRender(<Root store={store} />);
 
 export default Root;
@@ -80,3 +83,11 @@ export default Root;
 ...and that's it!
 
 Now every widget can `connect` to your store. Multiple widgets with a single state! Time traveling everywhere!
+
+## But you can reuse a Redux store everywhere if you make it a singleton, right?
+
+Sure, there are other solutions which use singletons to achieve the same behaviour, but there are many issues with this kind of approach.
+
+Singletons will make it incredibly hard to test your widgets or use them in isolation. They also make it almost impossible to add server-side rendering to your application, because a separate store should be created per request.
+
+This is why a single virtual DOM is the superior solution, it simply has no disadvantages.

@@ -1,11 +1,11 @@
 ---
-title: "Usage"
+title: 'Usage'
 order: 3
 ---
 
-**TL;DR** You can use one of our [boilerplates](https://github.com/lundegaard/react-union/tree/master/boilerplates) as a base for your project instead.
+**TL;DR** You can use one of our [boilerplates](https://github.com/lundegaard/react-union/tree/master/boilerplates) as a starting point for your project instead.
 
-## 1. Simulate output of your server in development
+## 1. Simulate the output of your server in development
 
 Create `<project root>/public/YourAppName/index.ejs`:
 
@@ -23,11 +23,9 @@ Create `<project root>/public/YourAppName/index.ejs`:
 </html>
 ```
 
-For details how to write a template, see [https://github.com/jantimon/html-webpack-plugin](html-webpack-plugin).
+For details on how to write a template, see [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin).
 
-## 2. Add scripts
-
-Put script from RUS to your `package.json`:
+## 2. Add some scripts to your package.json
 
 ```json
 {
@@ -38,9 +36,9 @@ Put script from RUS to your `package.json`:
 }
 ```
 
-## 3. Create entry to your application
+## 3. Create your application entry point
 
-Code of your `<project root>/src/apps/YourAppName/index.js` may look like following:
+Source code of your `<project root>/src/apps/YourAppName/index.js` file may look like this:
 
 ```jsx
 import React from 'react';
@@ -49,15 +47,15 @@ import { render } from 'react-dom';
 render('Hello World', document.getElementById('root'));
 ```
 
-## 4. Run your project
+## 4. Run the application
 
-**Development server**
+**Start a development server**
 
 ```
 yarn start --app YourAppName
 ```
 
-**Start proxy server**
+**Start a proxy server**
 
 ```
 yarn start --app YourAppName --proxy
@@ -65,13 +63,13 @@ yarn start --app YourAppName --proxy
 
 **Production build**
 
-Build all registered apps.
+Build all available apps
 
 ```
 yarn build --release
 ```
 
-or build just one
+or just a single one
 
 ```
 yarn build --app YourAppName --release

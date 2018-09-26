@@ -1,25 +1,23 @@
 ---
-title: "CLI"
+title: 'CLI'
 order: 5
 ---
 
 ## Table of Contents
 
-* [--analyze](#--analyze)
-* [--app](#--app)
-* [--no-hmr](#--no-hmr)
-* [--proxy](#--proxy)
-* [--release](#--release)
-* [--target](#--target)
-* [--verbose](#--verbose)
+- [--analyze](#--analyze)
+- [--app](#--app)
+- [--no-hmr](#--no-hmr)
+- [--proxy](#--proxy)
+- [--release](#--release)
+- [--target](#--target)
+- [--verbose](#--verbose)
 
-
-### __--analyze__
+### **--analyze**
 
 Runs [`webpack-bundle-analyzer`](https://github.com/th0r/webpack-bundle-analyzer).
 
-Option is available for `start` script.
-
+Available for the following scripts: `start`, `build`.
 
 #### Example
 
@@ -27,11 +25,11 @@ Option is available for `start` script.
 react-union-scripts start --app MyApp --analyze
 ```
 
-### __--app__
+### **--app**
 
 Determines what application to build or start.
 
-Option is available for `start` and `build` scripts.
+Available for the following scripts: `start`, `build`.
 
 #### Example
 
@@ -39,11 +37,11 @@ Option is available for `start` and `build` scripts.
 react-union-scripts start --app MyApp
 ```
 
-### __--no-hmr__
+### **--no-hmr**
 
-If is set, hot module replacement is off.
+If passed, hot module replacement will be disabled.
 
-Option is available for `start` and `build` scripts.
+Available for the following scripts: `start`.
 
 #### Example
 
@@ -51,11 +49,11 @@ Option is available for `start` and `build` scripts.
 react-union-scripts start --no-hmr
 ```
 
-### __--proxy__
+### **--proxy**
 
-If is set, we start proxy server instead of development server.
+If passed, a proxy server will be started instead of a development server.
 
-Option is available for `start` script.
+Available for the following scripts: `start`.
 
 #### Example
 
@@ -63,11 +61,11 @@ Option is available for `start` script.
 react-union-scripts start --proxy
 ```
 
-### __--release__
+### **--release**
 
-If is set, the build is optimized for production.
+If passed, the JS output will be optimized for production.
 
-Option is available for `start` and `build` scripts.
+Available for the following scripts: `start`.
 
 #### Example
 
@@ -75,11 +73,11 @@ Option is available for `start` and `build` scripts.
 react-union-scripts build --release
 ```
 
-### __--target__
+### **--target**
 
-Custom value that can be used in `union.config.js
-`.
-Option is available for `start` and `build` scripts.
+Custom value that can be used in `union.config.js`.
+
+Available for the following scripts: `start`, `build`.
 
 #### Example
 
@@ -87,11 +85,11 @@ Option is available for `start` and `build` scripts.
 react-union-scripts build --target wordpress
 ```
 
-### __--verbose__
+### **--verbose**
 
-If is set, the console output is more verbose.
+If passed, the console output will be more verbose.
 
-Option is available for `start` and `build` scripts.
+Available for the following scripts: `start`, `build`.
 
 #### Example
 
