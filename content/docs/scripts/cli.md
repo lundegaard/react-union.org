@@ -63,7 +63,7 @@ react-union-scripts start --proxy
 
 ### **--release**
 
-If passed, the JS output will be optimized for production.
+If passed, the JavaScript output will be optimized for production.
 
 Available for the following scripts: `start`.
 

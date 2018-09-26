@@ -29,7 +29,13 @@
 		"classlanguage",
 		"Sass",
 		"uglify-es",
-		"minifier"
+		"minifier",
+		"subfolder",
+		"gradle",
+		"liferay",
+		"configs",
+		"SSR",
+		"templating"
 	],
 	"ignoreUrls": true,
 	"findRepeatWords": true
