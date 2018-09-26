@@ -74,7 +74,7 @@ In the example above, we are using the [universal HOC](https://github.com/faceys
 
 ## Usage
 
-### 1. Mockina server output
+### 1. Mocking server output
 
 First, we will assume that code below is a part of the output of your server.
 

@@ -3,7 +3,7 @@ title: 'Introduction'
 order: 2
 ---
 
-Extendable and configurable set of scripts for building and running your React applications that is designed for verios Content Management Systems or Java Portals.
+Extendable and configurable set of scripts for building and running your React applications that is designed for various Content Management Systems or Java Portals.
 
 ## Main features
 
