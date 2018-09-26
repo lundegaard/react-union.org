@@ -1,21 +1,22 @@
 ---
-title: "Utilities"
+title: 'Utilities'
 order: 7
 ---
 
 ### `justRender`
 
-A wrapper over `ReactDOM.render`. You need to provide the component you want to render.
+A wrapper over `ReactDOM.render`. You need to provide the element you want to render.
 
-`justRender(component: ReactComponent, htmlElementId: String): undefined` : function
+`justRender(reactElement: React.Element, rootId: String): undefined` : function
 
-- `component` - **required** - Root component of your app.
-- `htmlElementId` - `id` of the HTML element where the `component` should be rendered. If the element is not found, `justRender` will create it for you, defaulting to `"union"`.
+- `reactElement` - **required** - The root React element to render.
+- `rootId` - `id` of the HTML element where the `reactElement` should be rendered. If the element is not found, `justRender` will create it for you, with the ID defaulting to `"union"`.
 
 #### `justUnmountComponentAtNode`
-Wrapper over `ReactDOM.unmountComponentAtNode`. You need to provide component that you want to unmount.
 
-`justUnmountComponentAtNode(component: ReactComponent, htmlElementId: String):undefined` : function
+Wrapper over `ReactDOM.unmountComponentAtNode`. You need to provide the element you want to unmount.
 
-- `component` - **required** - Root component of your app.
-- `htmlElementId` - `id` of the HTML element where `component` should be unmounted. Defaults to `"union"`.
+`justUnmountComponentAtNode(reactElement: React.Element, rootId: String): undefined` : function
+
+- `reactElement` - **required** - The root React element to unmount.
+- `rootId` - `id` of the HTML element where `reactElement` should be unmounted. Defaults to `"union"`.

@@ -14,7 +14,7 @@ const Footer = () => (
 	<SiteContainer>
 		<Box width={1}>
 			MIT Licensed | Copyright © 2017-present Lundegaard a. s. |{' '}
-			<Link to="/history">{versions.actual}</Link>
+			<Link to="/history">{versions.current}</Link>
 		</Box>
 	</SiteContainer>
 );

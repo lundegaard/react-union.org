@@ -1,5 +1,5 @@
 export default {
-	actual: 'v0.6',
+	current: 'v0.6',
 	history: [
 		// {
 		// 	title: 'v0.4',

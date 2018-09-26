@@ -1,5 +1,5 @@
 ---
-title: "Installation"
+title: 'Installation'
 order: 1
 ---
 
@@ -16,5 +16,5 @@ yarn add react react-dom && yarn add react-union-scripts --dev
 or
 
 ```sh
-npm install react react-dom && npm install --save-dev react-union-scripts
+npm install react react-dom --save && npm install --save-dev react-union-scripts
 ```

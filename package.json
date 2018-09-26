@@ -74,6 +74,10 @@
 			"prettier --write",
 			"yarn lint:js --fix",
 			"git add"
+		],
+		"content/**/*.md": [
+			"prettier --write",
+			"git add"
 		]
 	}
 }

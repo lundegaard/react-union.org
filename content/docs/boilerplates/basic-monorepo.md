@@ -1,6 +1,6 @@
 ---
-title: 'Basic'
-order: 1
+title: 'Monorepo'
+order: 2
 ---
 
 This project can either be used as an example of react-union and react-union-scripts working together or as a starting point for your project.
@@ -10,7 +10,7 @@ This project can either be used as an example of react-union and react-union-scr
 ```sh
 git clone https://github.com/lundegaard/react-union.git
 
-cd react-union/boilerplates/react-union-boilerplate-basic
+cd react-union/boilerplates/react-union-boilerplate-monorepo
 
 yarn && yarn start
 ```

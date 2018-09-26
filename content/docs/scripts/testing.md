@@ -1,23 +1,23 @@
 ---
-title: "Testing"
+title: 'Testing'
 order: 7
 ---
 
 We are currently using Jest as the main testing framework.
-How to add your favorite React testing framework see [recipe](/scripts-recipes#testing-with-enzyme).
+Check out [this recipe](/scripts-recipes#testing-with-enzyme) to learn how to add your favorite testing framework.
 
-For custom configuration use `jest` key within your main `package.json`. We are currently supporting following keys:
+For custom configuration, use the `jest` key within your main `package.json`. We are currently supporting the following keys:
 
 ```js
 'collectCoverageFrom',
-'coverageReporters',
-'coverageThreshold',
-'resetMocks',
-'resetModules',
-'snapshotSerializers',
-'watchPathIgnorePatterns';
+	'coverageReporters',
+	'coverageThreshold',
+	'resetMocks',
+	'resetModules',
+	'snapshotSerializers',
+	'watchPathIgnorePatterns';
 ```
 
-**Note:** If you need [`setupTestFrameworkScriptFile`](http://jestjs.io/docs/en/configuration#setuptestframeworkscriptfile-string) configuration option, just create `testsSetup.js` file inside your root folder.
+**Note:** If you need the [`setupTestFrameworkScriptFile`](http://jestjs.io/docs/en/configuration#setuptestframeworkscriptfile-string) configuration option, just create a `testsSetup.js` file inside your root folder.
 
-See jest [configuration options](http://jestjs.io/docs/en/configuration).
+See jest [configuration options here](http://jestjs.io/docs/en/configuration).

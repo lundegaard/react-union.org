@@ -1,5 +1,5 @@
 ---
-title: "Widget Descriptors"
+title: 'Widget Descriptors'
 order: 4
 ---
 
@@ -13,13 +13,16 @@ The widget descriptor must be a `<script>` element with the attribute `data-unio
 
 ## Attributes
 
-#### `data-union-widget` : _string*_
+#### `data-union-widget` : _string\*_
+
 Name of the widget. In order to pair a _widget descriptor_ with a route, this attribute must equal to a `path` property of a route.
 
 #### `data-union-container` : _string_
+
 `id` attribute of an HTML element in which the widget returned by route will be rendered. `container` should be unique within the scope of a _widget descriptor_.
 
 #### `data-union-namespace` : _string_
+
 String that represents a unique ID of a _widget descriptor_. By default, the value of `namespace` is set to value within `container`.
 
 Value will be available in the widget root component under the `namespace` property.
