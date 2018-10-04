@@ -28,18 +28,16 @@ react-union-boilerplate
 |	|				└── Root.css
 |	|				└── index.js
 |	|		└── index.js
-|	|		└── routes.js
+|	|		└── routes.js - Creates widget routes objects
 |	└── widgets
 |		├── Content 	- Base folder for Content widget
 |		|	└── components
 |		|		└── ...
 |		|	└── content.widget.js - Files with *.widget.js are loaded async when requested
-|		|	└── route.js - Exports the React Union's route for the widget
 |		└── Hero		- Base folder for Hero widget
 |			└── components
 |				└── ...
-|			└── hero.widget.js
-|			└── route.js
+|			└── hero.widget.js - Exports widget`s root component
 |
 ├── .babelrc 			- Babel config for ES6+ syntax
 ├── .editorconfig
