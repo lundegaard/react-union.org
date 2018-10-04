@@ -25,24 +25,22 @@ react-union-boilerplate
 |	|		└── components
 |	|			└── Root
 |	|				└── Root.js
-|	|				└── Root.scss - React Union scripts works with node-sass out of the box
+|	|				└── Root.css
 |	|				└── index.js
 |	|		└── index.js
 |	|		└── routes.js
-|	├── widgets
-|	|	├── Content 	- Base folder for Content widget
-|	|	|	└── components
-|	|	|		└── ...
-|	|	|	└── content.widget.js - Files with *.widget.js are loaded async when requested
-|	|	|	└── route.js - Exports the React Union's route for the widget
-|	|	└── Hero		- Base folder for Hero widget
-|	|		└── components
-|	|			└── ...
-|	|		└── hero.widget.js
-|	|		└── route.js
-|	└──	test
-|		└──	stubs
-|			└──	scssStub.js - Stubs used for by Jest
+|	└── widgets
+|		├── Content 	- Base folder for Content widget
+|		|	└── components
+|		|		└── ...
+|		|	└── content.widget.js - Files with *.widget.js are loaded async when requested
+|		|	└── route.js - Exports the React Union's route for the widget
+|		└── Hero		- Base folder for Hero widget
+|			└── components
+|				└── ...
+|			└── hero.widget.js
+|			└── route.js
+|
 ├── .babelrc 			- Babel config for ES6+ syntax
 ├── .editorconfig
 ├── .eslintignore
