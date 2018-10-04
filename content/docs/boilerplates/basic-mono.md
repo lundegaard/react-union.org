@@ -23,7 +23,7 @@ react-union-boilerplate-monorepo
 |	|		└── components
 |	|		|	└── Root
 |	|		|		└── Root.js
-|	|		|		└── Root.scss - React Union scripts works with node-sass out of the box
+|	|		|		└── Root.css
 |	|		|		└── index.js
 |	|		└── index.js
 |	|		└── routes.js
@@ -38,7 +38,7 @@ react-union-boilerplate-monorepo
 |       └── src
 |			└── components
 |				└── ...
-|			└── content.widget.js
+|			└── hero.widget.js
 ├── .babelrc 			- Babel config for ES6+ syntax
 ├── .editorconfig
 ├── .eslintignore
