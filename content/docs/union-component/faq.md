@@ -5,7 +5,7 @@ order: 8
 
 ## _Why should I use it?_
 
-React-union makes features such as Hot Module Reloading possible for systems such as WordPress or Liferay!
+React Union makes features such as Hot Module Reloading possible for systems such as WordPress or Liferay!
 
 ```jsx
 // index.js

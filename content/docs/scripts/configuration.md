@@ -12,8 +12,6 @@ order: 6
 - [apps](#apps)
 - [templateFilename](#templatefilename)
 - [generateTemplate](#generatetemplate)
-- [generateVendorBundle](#generatevendorbundle)
-- [vendorBlacklist](#vendorblacklist)
 - [mergeWebpackConfig](#mergewebpackconfig)
 - [asyncSuffix](#asyncsuffix)
 - [copyToPublicIgnore](#copytopublicignore)
@@ -27,7 +25,7 @@ Configuration file can export either:
 - a static JSON object or
 - a function.
 
-If you pass a function, it will be invoked with an object which describes the CLI arguments passed to the currently running script:
+If you pass a function, it will be called with an object describing the CLI arguments passed to a script:
 
 ```js
 // example of dynamic union.config.js
@@ -38,7 +36,7 @@ module.exports = ({
 	debug,
 	proxy,
 	verbose,
-	noHMR,
+	noHmr,
 	analyze,
 }) => ({
 	outputMapper: target === 'liferay' ? { js: 'widgets/js' } : {},

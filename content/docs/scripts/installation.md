@@ -3,7 +3,7 @@ title: 'Installation'
 order: 1
 ---
 
-React-union-scripts are available as an [npm package](http://npm.im/react-union-scripts).
+React Union Scripts are available as an [npm package](http://npm.im/react-union-scripts).
 
 # Yarn/npm
 

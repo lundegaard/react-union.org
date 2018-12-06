@@ -3,7 +3,7 @@ title: 'Installation'
 order: 1
 ---
 
-React-union is available as an [npm package](http://npm.im/react-union).
+React Union is available as an [npm package](http://npm.im/react-union).
 
 # Yarn/npm
 

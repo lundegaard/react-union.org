@@ -109,15 +109,14 @@ const Index = () => (
 				<Box>
 					<p>
 						<strong>
-							The React-union project is a collection of tools that allows you to build modern React
-							applications which run on specific server-side environments such as Content Management
-							Systems or Portals.
+							The React Union project is a collection of tools that allow you to build modern React
+							applications for content management systems or enterprise portals.
 						</strong>
 					</p>
 				</Box>
 				<Divider />
 
-				<h2>Content Management Systems, Portals and React applications</h2>
+				<h2>Content management systems, enterprise portals and React applications</h2>
 
 				<p>
 					There are some problems in those types of systems that need to be addressed in order to

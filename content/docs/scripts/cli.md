@@ -39,7 +39,7 @@ react-union-scripts start --app MyApp
 
 ### **--no-hmr**
 
-If passed, hot module replacement will be disabled.
+If passed, Hot Module Replacement will be disabled.
 
 Available for the following scripts: `start`.
 

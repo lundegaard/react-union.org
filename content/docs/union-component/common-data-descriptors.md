@@ -7,7 +7,7 @@ A _common data descriptor_ is a DOM element used for passing common data to all 
 
 It must be a `<script>` element with the `data-union-common` HTML attribute.
 
-Please note that although you can provide multiple common data descriptors to React-union, it is discouraged if you don't have control over their order in the portal or CMS.
+Please note that although you can provide multiple common data descriptors to React Union, it is discouraged if you don't have control over their order in the portal or CMS.
 
 ## Attributes
 

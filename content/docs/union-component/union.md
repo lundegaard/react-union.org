@@ -104,7 +104,7 @@ First, we will assume that code below is a part of the output of your server.
 As you can see, there is an empty `div` with an `id` of `hero-container`. This is the HTML element where we want to render the widget called `hero`.
 To do so, we must create a [_widget descriptor_](/union-component-widget-descriptors).
 
-A _widget descriptor_ is a JSON script element that contains the `data-union-widget` attribute. It tells React-union that the `hero` widget should be rendered into the `hero-container` element and be passed the data `{"username": "reactlover"}`.
+A _widget descriptor_ is a JSON script element that contains the `data-union-widget` attribute. It tells React Union that the `hero` widget should be rendered into the `hero-container` element and be passed the data `{"username": "reactlover"}`.
 
 ### 2. Writing a Hero widget
 
@@ -123,7 +123,7 @@ The widget simply renders the `username` passed in the widget descriptor content
 
 ### 3. Writing a route for Hero
 
-Next, React-union needs to know where is the code for the widget we called as `hero`.
+Next, React Union needs to know where is the code for the widget we called as `hero`.
 So we will write simple object with just 2 properties called `route` (in our case `HeroRoute`):
 
 ```js
