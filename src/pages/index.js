@@ -98,7 +98,7 @@ const Index = () => (
 					</Box>
 					<Box width={[1 / 3]} px="16px">
 						<h2>
-							<Link to="/components-introduction">Boilerplates</Link>
+							<Link to="/boilerplates-basic">Boilerplates</Link>
 						</h2>
 						<p>Blazing fast project setup with our boilerplates.</p>
 						<p>Multiple examples with more on the way!</p>
