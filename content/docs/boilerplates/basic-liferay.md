@@ -5,6 +5,8 @@ order: 3
 
 This project shows how both `react-union` and `react-union-scripts` can be used within [Liferay](https://dev.liferay.com/) portal platform.
 
+_We target the version 7.2 and above. For the Liferay 7.0 and 7.1 versions see the older versions of the boilerplates._
+
 ## Running the example
 
 ```sh
@@ -38,15 +40,11 @@ By default `union.config.js` is configured to:
 
 ### 5. Create production build
 
-- Run `yarn build:liferay`.
+- Run `yarn build`.
 
-### 6. Build and deploy `liferay-amd-loader` module
+### 6. Deploy to Liferay
 
-AMD loader is an OSGi module that enables you to include static resources into liferay ecosystem. Afterwards you can require them asynchronously from union based application, portlet or elsewhere.
-
-- Move to `/liferay-amd-loader` subfolder.
-- Run `./gradlew build`.
-- Deploy manually or using blade tools
+Resulting `jar` can be found in the `dist` folder as it is produced by [liferay-npm-bundler](https://github.com/liferay/liferay-js-toolkit/). We do some preprocessing to make the filenames of more deterministic in the [bundle](https://github.com/lundegaard/react-union/blob/master/packages/react-union-liferay-build-tools/scripts/bundle.js) script. This way we can make HMR in DEV mode work.
 
 ### 7. Build and deploy `hero-portlet` module
 
@@ -99,9 +97,3 @@ yarn test
 ```sh
 yarn build --release --analyze
 ```
-
-# FAQ
-
-## _How to move the `liferay-amd-loader` folder out of the root directory of my project?_
-
-Just cut and place the folder to the new location. After that, update `paths.build` in `union.config.js`.
