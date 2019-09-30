@@ -35,7 +35,12 @@
 		"liferay",
 		"configs",
 		"SSR",
-		"templating"
+		"templating",
+		"Polyfilling",
+		"IE11", 
+		"polyfills",
+		"bundler",
+		"HMR"
 	],
 	"ignoreUrls": true,
 	"findRepeatWords": true
